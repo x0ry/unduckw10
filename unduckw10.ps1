@@ -3,6 +3,7 @@
 █░██░█░██░█░▄██░██░█░█▀█░▄▀██░█░█░██░██░▀▄░█▀▀██░▀▀░██▄▄▄▀▀██░█
 ██▄▄▄█▄██▄█▄████▄▄▄██▄██▄█▄██▄▀▄▀▄█▀░▀█░▀▀░█▄▄██░█████░▀▀▀░█▀░▀
 ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+# Because if it doesn't crash the system, it's optional.
 $procs = Get-Process #-IncludeUserName
 foreach ($p in $procs){
 Write-Output $p.ProcessName
