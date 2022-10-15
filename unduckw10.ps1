@@ -4,6 +4,8 @@
 ██▄▄▄█▄██▄█▄████▄▄▄██▄██▄█▄██▄▀▄▀▄█▀░▀█░▀▀░█▄▄██░█████░▀▀▀░█▀░▀
 ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 # Because if it doesn't crash the system, it's optional.
+# Use as a Scheduled Task (CRON) for maximum effectiveness.
+#while(true){
 $procs = Get-Process #-IncludeUserName
 foreach ($p in $procs){
 Write-Output $p.ProcessName
@@ -15,6 +17,8 @@ Get-Process -Name 'Widgets'  | Stop-Process -Force
 cls
 }
 catch{}
+#Start-Sleep 1
+#}
 #Get-Process -Name 'AggregatorHost'  | Stop-Process -Force
 #Get-Process -Name 'ApplicationFrameHost'  | Stop-Process -Force
 #Get-Process -Name 'audiodg'  | Stop-Process -Force
